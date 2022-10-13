@@ -7,7 +7,7 @@
   }
 
   function reduceTheAge() {
-    age -= 1
+    age = 0
   }
 </script>
 
@@ -19,7 +19,7 @@
 
 <h2>This is level 2 heading.</h2>
 
-<button on:click={reduceTheAge}>Reduce the age</button>
+<button on:click={reduceTheAge}>Reset</button>
 
 <button on:click={onClick}>Increase the age</button>
 
