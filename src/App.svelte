@@ -20,6 +20,8 @@
 
 <button on:click={getOlder}>Get older</button>
 
+<button on:click={() => age += 10} on:dblclick={() => age += 1000}>Get much older</button>
+
 <style>
   h1 {
     background: red;
