@@ -8,9 +8,14 @@
   function getOlder() {
     age += 1
   }
+
+  // This is the name of the user.
+  let name = ""
 </script>
 
-<h1>Hello</h1>
+<input type="text" bind:value={name} placeholder="Your name" />
+
+<h1>Hello {name}</h1>
 
 <p>
   You are {age} years old.
