@@ -1,7 +1,7 @@
 <script>
   let age = 14
 
-  function die() {
+  function setAgeTo0() {
     age = 0
   }
 
@@ -13,9 +13,7 @@
   let name = ""
 </script>
 
-<input type="range" bind:value={age} min="-78" max="50" />
-
-<input type="number" bind:value={age} />
+<input type="range" bind:value={age} min="0" max="50" />
 
 <input bind:value={name} placeholder="Your name" />
 
@@ -25,7 +23,7 @@
   You are {age} years old.
 </p>
 
-<button on:click={die}>Die</button>
+<button on:click={setAgeTo0}>Change age to 0</button>
 
 <button on:click={getOlder}>Get older</button>
 
