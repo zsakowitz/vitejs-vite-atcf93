@@ -13,7 +13,11 @@
   let name = ""
 </script>
 
-<input type="text" bind:value={name} placeholder="Your name" />
+<input type="range" bind:value={age} min="-78" max="50" />
+
+<input type="number" bind:value={age} />
+
+<input bind:value={name} placeholder="Your name" />
 
 <h1>Hello {name}</h1>
 
