@@ -15,6 +15,8 @@
 
 <input type="range" bind:value={age} min="0" max="50" />
 
+<br />
+
 <input bind:value={name} placeholder="Your name" />
 
 <h1>Hello {name}</h1>
