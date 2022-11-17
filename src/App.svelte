@@ -1,4 +1,6 @@
 <script>
+  import Button from "./lib/Button.svelte"
+
   let age = 14
 
   function setAgeTo0() {
@@ -12,6 +14,10 @@
   // This is the name of the user.
   let name = ""
 </script>
+
+<Button />
+<Button />
+<Button />
 
 <input type="range" bind:value={age} min="0" max="50" />
 
@@ -33,7 +39,7 @@
 
 <style>
   h1 {
-    background: red;
-    color: orange;
+    background: white;
+    color: #f0f0f0;
   }
 </style>
